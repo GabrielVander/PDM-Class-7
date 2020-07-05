@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondFragment">
+
+    <Button
+        android:id="@+id/btnCalculateAverage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/calculate_average"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.529"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputAverage" />
+
+    <TextView
+        android:id="@+id/lblFirstGrade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/first_grade"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblSecondGrade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="30dp"
+        android:text="@string/second_grade"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/inputFirstGrade"
+        android:layout_width="55dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="@+id/lblFirstGrade"
+        app:layout_constraintStart_toStartOf="@+id/lblFirstGrade"
+        app:layout_constraintTop_toBottomOf="@+id/lblFirstGrade"
+        android:autofillHints="" />
+
+    <EditText
+        android:id="@+id/inputSecondGrade"
+        android:layout_width="55dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="@+id/lblSecondGrade"
+        app:layout_constraintStart_toStartOf="@+id/lblSecondGrade"
+        app:layout_constraintTop_toBottomOf="@+id/lblSecondGrade"
+        android:autofillHints="" />
+
+    <TextView
+        android:id="@+id/lblAverage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/average"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputFirstGrade" />
+
+    <EditText
+        android:id="@+id/inputAverage"
+        android:layout_width="73dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="@+id/lblAverage"
+        app:layout_constraintStart_toStartOf="@+id/lblAverage"
+        app:layout_constraintTop_toBottomOf="@+id/lblAverage"
+        android:autofillHints="" />
+</androidx.constraintlayout.widget.ConstraintLayout>
